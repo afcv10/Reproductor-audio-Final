@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.background{
+    display: flex;
+    position: fixed;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/345377/thousand-thursday%402x.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.repro{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 340px;
+    height: 585px;
+    /*flex-grow: 1;**/
+}
+
+.superior{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+.progreso{
+    display: flex;
+    margin-top: 3px;
+    background-color: red;
+    width: 100%;
+    height: 0.5%;
+}
+.progreso hr{
+    border: 0px;
+    background: grey;
+    width: 50%;
+    transform: translateX(170px);
+}
+.numeros{
+    display: flex;
+    background-color: white;
+    font-size: 10px;
+    justify-content: space-between;
+    font-family: inherit;
+    color: #0b0b0b;
+    width: 100%;
+    height: 3%;
+}
+.botones{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.btn{
+    width: 15%;
+    height: 25%;
+}
+.play{
+    width: 50%;
+    height: 50%;
+}
+
+.play:hover{
+    fill: #eb2045;
+    cursor: pointer;
+}
+.btn:hover{
+    fill: #eb2045;
+    cursor: pointer;
+}
+.texto{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 10px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+h2{
+    font-size: 14px;
+}
+.footer{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 8%;
+    align-items: center;
+}
+.btnInf{
+    fill: #fac8d1;
+    width: 50%;
+    height: 50%;
+}
+.btnInf2{
+    fill: #6e6c6c;
+    width: 50%;
+    height: 50%;
+}
+.btnInf:hover{
+    fill: #eb2045;
+    cursor: pointer;
+}
+.btnInf2:hover{
+    fill: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .repro{
+        width: 100%;
+        height: 98%;
+        margin: 10px;
+    }
+    .superior{
+        height: 50%;
+    }
+    .progreso hr{
+        border: 0px;
+        background: grey;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .texto{
+        font-size: 100%;
+    }
+}
+
+
